@@ -1,0 +1,19 @@
+{
+  "name": "mining_blocker",
+  "version": "0.1.0",
+  "description": "Mining blocker puppeteer client",
+  "scripts": {
+    "help": "node src/help.js",
+    "start": "node src/index.js",
+    "update-miners-list": "node src/miners-list/miners-list-update.js"
+  },
+  "author": "Elina Kuznetsova",
+  "config": {
+    "scanTimeoutSeconds": 5,
+    "minersListRepositoryId": 6837855
+  },
+  "dependencies": {
+    "puppeteer": "^19.0.0",
+    "axios": "1.1.3"
+  }
+}
