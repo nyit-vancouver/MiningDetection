@@ -4,13 +4,12 @@
   "description": "Mining blocker puppeteer client",
   "scripts": {
     "help": "node src/help.js",
-    "start": "node src/index.js",
+    "scan": "node src/index.js",
     "update-miners-list": "node src/miners-list/miners-list-update.js"
   },
   "author": "Elina Kuznetsova",
   "config": {
-    "scanTimeoutSeconds": 5,
-    "minersListRepositoryId": 6837855
+    "scanTimeoutSeconds": 5
   },
   "dependencies": {
     "puppeteer": "^19.0.0",
