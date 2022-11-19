@@ -1,2 +1,2 @@
-https://google.com
-https://nyit.edu
+
+http://google.com

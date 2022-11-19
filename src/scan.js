@@ -9,7 +9,7 @@ module.exports = exports = async (urlToScan, minersList) => {
         new URL(urlToScan);
     } catch (e) {
         console.log(`URL is invalid. Make sure URL contains protocol prefix like "http://"`);
-        process.exit(1);
+        return;
     }
 
     const browser = await puppeteer.launch({
