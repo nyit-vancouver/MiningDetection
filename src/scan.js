@@ -1,6 +1,7 @@
 const url = require('url');
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const chalk = require('chalk');
 
 const scanTimeoutSeconds = Number(process.env.npm_config_timeout) || Number(process.env.npm_package_config_scanTimeoutSeconds);
 
@@ -51,30 +52,28 @@ module.exports = exports = async (urlToScan, minersList) => {
                 }
             }
 
-            console.log('Amount of domains scanned: ', scannedUrls.size);
-            console.log(scannedUrls);
-            console.log('');
-
             if (miningUrlsDetected.size) {
-                console.log('================================================');
-                console.log('Report:');
-                console.log('!!! MINING DETECTED !!! ');
+
+                console.log(chalk.red('Report:', urlToScan));
+                console.log(chalk.red('!!! MINING IS DETECTED !!! '));
                 for (let minerUrl of miningUrlsDetected) {
-                    console.log('Tested URL: ' + minerUrl);
+                    console.log(chalk.red('Tested URL: ' + minerUrl));
                 }
-                console.log('=================================================');
+                console.log('==============================================================');
             } else {
-                console.log('================================================');
-                console.log('Report:');
-                console.log('Mining is not detected');
-                console.log('=================================================');
+
+                console.log(chalk.green('Report:', urlToScan));
+                console.log(chalk.green('Mining is not detected'));
+                console.log('==============================================================');
             }
         }
     });
 
     // open website
-    console.log('Loading URL. Start scanning.');
-    const response = await page.goto(urlToScan);
+    console.log('Loading URL %s. Start scanning.', urlToScan);
+    const response = await page.goto(urlToScan, {
+        timeout: 5000, // milliseconds
+    });
 
     // save website screenshot
     await page.screenshot({
@@ -90,14 +89,14 @@ module.exports = exports = async (urlToScan, minersList) => {
     }
 
     let waitingCounter = 0;
-    const waitingTimer = setInterval(async () => {
-        waitingCounter++;
-        if (waitingCounter === scanTimeoutSeconds) {
-            clearInterval(waitingTimer);
-            console.log('Scanning is finished by timeout');
-            await browser.close();
-        } else {
-            console.log('Waiting for new requests...');
-        }
-    }, 1000);
+    return new Promise((accept) => {
+        const waitingTimer = setInterval(async () => {
+            waitingCounter++;
+            if (waitingCounter === scanTimeoutSeconds) {
+                clearInterval(waitingTimer);
+                await browser.close();
+                accept();
+            }
+        }, 1000);
+    });
 }

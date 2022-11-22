@@ -1,2 +1,4 @@
-
-http://google.com
+http://lightminer.co/
+https://google.com
+http://sumo.hashvault.pro/
+http://nerdorium.org/

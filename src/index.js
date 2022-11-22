@@ -1,6 +1,7 @@
 const url = require('url');
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk');
 const scan = require('./scan');
 
 // check existence and load miners-list.json
@@ -30,8 +31,15 @@ if (!fs.existsSync(websitesToScanFilePath)) {
 
 async function main() {
     for (let url of websitesToScan) {
-        await scan(url, minersList);
+        try {
+            await scan(url, minersList);
+        } catch (e) {
+            console.log(chalk.yellow('Can\'t open this website:', url));
+            continue;
+        }
     }
+    console.log('Scanning is done.');
+    process.exit();
 }
 
 main();
