@@ -72,7 +72,7 @@ After the script analyzed the URLs, you will see the reports about found activit
 
 <a href="mailto:ekuznets@nyit.edu">Elina Kuznetsova</a>
 
-Project Link: [Mining Detection](https://github.com/nyit-vancouver/MiningDetection)
+<a href="nyit.edu">New York Institute of Technology</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
