@@ -16,10 +16,4 @@ The tool is aimed to analyze, detect and report about mining activities on a web
 For bootstraping this project, the next major frameworks/libraries were used:
 
 * <a href="https://github.com/nodejs/nodejs.org">NodeJS</a>
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* <a href="https://github.com/nodejs/nodejs.org](https://developer.chrome.com/docs/puppeteer/">Google Puppeteer</a>
