@@ -17,3 +17,12 @@ For bootstraping this project, the next major frameworks/libraries were used:
 
 * <a href="https://github.com/nodejs/nodejs.org">NodeJS</a>
 * <a href="https://github.com/nodejs/nodejs.org](https://developer.chrome.com/docs/puppeteer/">Google Puppeteer</a>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+For setting up our project locally, you will need to get a local copy up and running follow these simple steps.
+
+### Prerequisites
+* Install <a href="https://github.com/nodejs/nodejs.org](https://nodejs.org/en/">NodeJS</a>
+* Install <a href="https://github.com/nodejs/nodejs.org](https://developer.chrome.com/docs/puppeteer/">Google Puppeteer</a>
