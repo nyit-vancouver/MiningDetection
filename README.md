@@ -1,6 +1,6 @@
 ### Web Mining Detection and Reporting Tool
 <a name="readme-top"></a>
-The 'Mining Detection' tool was developed during the course INCS 870 at New York Institute of Technology (Vancouver, BC campus) under the supervision of Dr. Amin Milani Fard by students:
+The Web Mining Detection and Reporting Tool was developed during the course INCS 870 at New York Institute of Technology (Vancouver, BC campus) under the supervision of Dr. Amin Milani Fard by students:
  
 - Juan Fu
 - Saba Mohammadi
@@ -29,19 +29,19 @@ For setting up our project locally, you will need to get a local copy up and fol
 
 ### Installation
 
-For installation all the dependencies, just open the cloned repository in your Terminal
+For installation you will need to follow these steps:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/nyit-vancouver/MiningDetection
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Update the Mining Database
+   ```sh
+   npm run update-miners-list
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -50,9 +50,28 @@ For installation all the dependencies, just open the cloned repository in your T
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+For using the Web Mining Detection and Reporting Tool, you need to follow only two steps:
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Add all URLs for scanning to <b>websites-to-scan.txt</b>. For example:
+```txt
+http://coinhive.com/
+https://google.com
+   ```
+ 2. Run for scanning: npm run scan
+  ```sh
+   npm run scan
+   ```
+<!-- USAGE EXAMPLES -->
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+## Reporting
+After the script analyzed the URLs, you will see the reports about found activities
+
+
+## Contact
+
+<a href="mailto:ekuznets@nyit.edu">Elina Kuznetsova</a>
+
+Project Link: [Mining Detection](https://github.com/nyit-vancouver/MiningDetection)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
