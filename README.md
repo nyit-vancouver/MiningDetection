@@ -65,6 +65,7 @@ https://google.com
 
 ## Reporting
 After the script analyzed the URLs, you will see the reports about found activities
+<img src="https://github.com/nyit-vancouver/MiningDetection/blob/main/images/example.png">
 
 
 ## Contact
