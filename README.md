@@ -15,7 +15,7 @@ The tool is aimed to analyze, detect and report about mining activities on a web
 
 For bootstraping this project, the next major frameworks/libraries were used:
 
-* <a href="Nodejs.org">NodeJS</a>
+* <a href="https://github.com/nodejs/nodejs.org">NodeJS</a>
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
