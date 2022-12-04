@@ -61,9 +61,7 @@ For using the Web Mining Detection and Reporting Tool, you need to follow only t
    node telegram.js
    ```
  2. In any browser, open https://t.me/MiningDetection_bot
-  ```sh
-   npm run scan
-   ```
+ 3. In the bot, click 'Start' and enter the web addresses for testing
 <!-- USAGE EXAMPLES -->
 
 ## Reporting
