@@ -1,6 +1,5 @@
 const url = require('url');
 const puppeteer = require('puppeteer');
-const fs = require('fs');
 const chalk = require('chalk');
 
 const scanTimeoutSeconds = Number(process.env.npm_config_timeout) || Number(process.env.npm_package_config_scanTimeoutSeconds);
@@ -53,24 +52,23 @@ module.exports = exports = async (urlToScan, minersList) => {
             }
 
             if (miningUrlsDetected.size) {
-
-                console.log(chalk.red('Report:', urlToScan));
-                console.log(chalk.red('!!! MINING IS DETECTED !!! '));
+                var fire = '\u{1F6D1}';
+                console.log(chalk.red(fire + fire + fire + ' MINING IS DETECTED ' + fire + fire + fire));
                 for (let minerUrl of miningUrlsDetected) {
                     console.log(chalk.red('Tested URL: ' + minerUrl));
                 }
-                console.log('==============================================================');
-            } else {
 
-                console.log(chalk.green('Report:', urlToScan));
-                console.log(chalk.green('Mining is not detected'));
-                console.log('==============================================================');
+            } else {
+                var party = '\u{2705}';
+                console.log(chalk.green(party + party + party + ' MINING IS NOT DETECTED ' + party + party + party));
+                console.log(chalk.green('Tested URL: ' + urlToScan));
+
             }
         }
     });
 
     // open website
-    console.log('Loading URL %s. Start scanning.', urlToScan);
+    console.log('Loading URL %s. Start scanning...', urlToScan);
     const response = await page.goto(urlToScan, {
         timeout: 5000, // milliseconds
     });

@@ -34,7 +34,8 @@ async function main() {
         try {
             await scan(url, minersList);
         } catch (e) {
-            console.log(chalk.yellow('Can\'t open this website:', url));
+            var warn = '\u{1F6A7}';
+            console.log(chalk.yellow(warn + warn + warn + ' CANNOT OPEN: '+ url + ' ' + warn + warn + warn));
             continue;
         }
     }

@@ -1,7 +1,7 @@
 {
-  "name": "mining_blocker",
+  "name": "Mining Detector",
   "version": "0.1.0",
-  "description": "Mining blocker puppeteer client",
+  "description": "Mining detector and reporter puppeteer client",
   "scripts": {
     "help": "node src/help.js",
     "scan": "node src/index.js",
@@ -14,6 +14,7 @@
   "dependencies": {
     "axios": "^1.1.3",
     "chalk": "^4.1.2",
-    "puppeteer": "^19.0.0"
+    "puppeteer": "^19.0.0",
+    "telegraf": "^4.11.2"
   }
 }
