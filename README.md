@@ -18,6 +18,7 @@ For bootstraping this project, the next major frameworks/libraries were used:
 
 * <a href="https://github.com/nodejs/nodejs.org">NodeJS</a>
 * <a href="https://github.com/nodejs/nodejs.org](https://developer.chrome.com/docs/puppeteer/">Google Puppeteer</a>
+* <a href="https://telegraf.js.org/">telegraf.js</a>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -27,6 +28,8 @@ For setting up our project locally, you will need to get a local copy up and fol
 ### Prerequisites
 * Install <a href="https://nodejs.org/en/">NodeJS</a>
 * Install <a href="https://developer.chrome.com/docs/puppeteer/">Google Puppeteer</a>
+* Install <a href="https://telegraf.js.org/">telegraf.js</a>
+* Install <a href="https://telegram.org/">Telegram Messenger</a>
 
 ### Installation
 
@@ -53,15 +56,12 @@ For installation you will need to follow these steps:
 ## Usage
 For using the Web Mining Detection and Reporting Tool, you need to follow only two steps:
 
-1. Add all URLs for scanning to <b>websites-to-scan.txt</b>. For example:
-```txt
-http://coinhive.com/
-https://google.com
+1. Run for launching the Telegram bot: 
+```sh
+   node telegram.js
    ```
- 2. Run for scanning: npm run scan
-  ```sh
-   npm run scan
-   ```
+ 2. In any browser, open https://t.me/MiningDetection_bot
+ 3. In the bot, click 'Start' and enter the web addresses for testing
 <!-- USAGE EXAMPLES -->
 
 ## Reporting
