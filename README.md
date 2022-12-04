@@ -66,9 +66,9 @@ For using the Web Mining Detection and Reporting Tool, you need to follow only t
 
 ## Reporting
 After the script analyzed the URLs, you will see the reports about found activities
-<img src="https://github.com/nyit-vancouver/MiningDetection/screenshots/start.png">
-<img src="https://github.com/nyit-vancouver/MiningDetection/screenshots/1.png">
-<img src="https://github.com/nyit-vancouver/MiningDetection/screenshots/2.png">
+<img src="https://github.com/nyit-vancouver/MiningDetection/blob/main/screenshots/start.png">
+<img src="https://github.com/nyit-vancouver/MiningDetection/blob/main/screenshots/1.png">
+<img src="https://github.com/nyit-vancouver/MiningDetection/blob/main/screenshots/2.png">
 
 
 ## Contact
