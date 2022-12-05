@@ -43,7 +43,11 @@ For installation you will need to follow these steps:
    ```sh
    npm install
    ```
-4. Update the Mining Database
+4. Install Telegraf package
+   ```sh
+   npm install telegraf
+   ```
+5. Update the Mining Database
    ```sh
    npm run update-miners-list
    ```
