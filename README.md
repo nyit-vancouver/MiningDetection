@@ -10,7 +10,7 @@ The Web Mining Detection and Reporting Tool was developed during the course INCS
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The tool is aimed to analyze, detect and report about mining activities on a website.
+The tool is aimed to analyze, detect and report about mining activities on a website. Also, it saves the screenshot of the tested web domain.
 
 ### Built With
 
