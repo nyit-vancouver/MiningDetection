@@ -60,12 +60,18 @@ For installation you will need to follow these steps:
 ## Usage
 For using the Web Mining Detection and Reporting Tool, you need to follow only two steps:
 
-1. Run for launching the Telegram bot: 
+1. Open your cloned folder in Terminal and launch for updating database:
+```sh
+npm run update-miners-list
+ ```
+
+2. Run for launching the Telegram bot: 
 ```sh
    node telegram.js
    ```
- 2. In any browser, open https://t.me/MiningDetection_bot
- 3. In the bot, click 'Start' and enter the web addresses for testing
+ 3. In any browser, open https://t.me/MiningDetection_bot
+ 4. In the bot, click 'Start' and enter the web addresses for testing
+
 <!-- USAGE EXAMPLES -->
 
 ## Reporting
